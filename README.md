@@ -1,19 +1,7 @@
-# {Template} Local Data Dictionary (LDD)
+# Survey Local Data Dictionary (LDD)
 
-The {Template} dictionary contains classes that describe a fictious mission. It can be used as a starting point for creating a new local data dictionary (LDD). After cloning the files, do the following:
+The Survey dictionary contains classes that support ground based sky surveys.
 
-1. Remove the ".git" folder to detach the closed files from the git repository.
-	- If creating a new git repository, follow instructions provided by the git host for initializing a new repository. For a repository on github this would be:
-	```
-	git init
-	git add .
-	git commit -m "Initialize"
-	git remote add origin git@github.com:nasa-pds/{your repo}.git
-	git push -u origin master
-	```
-2. Modify this README.md file.
-	- Change title and description (this text) to correspond to your LDD. 
-	- Update Version section below.
 3. Update the "build" folder 
 	- Create IM version folders that contain LDD version folders.
 	- Update "README.md" to include links to versions.
@@ -41,10 +29,10 @@ The build process insures compatiblity of the LDD with the core information mode
 
 This LDD has been built for the following versions of the PDS4 information model.
 
-- [1.9.0.0](build/1.9.0.0)
+- [1.A.0.0](build/1.9.0.0)
    - [1.0.0.0](src/1.0.0.0) (Download: 
-      [XMLSchema (XSD)](https://github.com/nasa-pds/ldd-template/raw/master/build/1.9.0.0/1.0.0.0/PDS4_MESS_1900_1000.xsd)
-      | [Schematron (SCH)](https://github.com/nasa-pds/ldd-template/raw/master/build/1.9.0.0/1.0.0.0/PDS4_MESS_1900_1000.sch)
+      [XMLSchema (XSD)](https://github.com/sbn-psi/ldd-survey/raw/master/build/1.A.0.0/1.0.0.0/PDS4_SURVEY_1A00_1000.xsd)
+      | [Schematron (SCH)](https://github.com/sbn-psi/ldd-survey/raw/master/build/1.A.0.0/1.0.0.0/PDS4_SURVEY_1A00_1000.sch)
       )
 
 	
