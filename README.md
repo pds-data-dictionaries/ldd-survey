@@ -2,9 +2,6 @@
 
 The Survey dictionary contains classes that support ground based sky surveys.
 
-4. Update the "src" folder
-	- Create LDD version folders.
-	- Update "README.md" to include LDD name and links to versions.
 5. Update LDD specification
 	- Rename "ldd-template.xml" to "ldd-" + LDD name.
 	- Update contents of ldd specification file
