@@ -2,8 +2,6 @@
 
 The Survey dictionary contains classes that support ground based sky surveys.
 
-5. Update LDD specification
-	- Update contents of ldd specification file
 6. Generate XML Schema and Schematron files.
 	- In the "src" folder, run the [lddtool](https://pds.nasa.gov/pds4/software/ldd/) specific to a version of the [PDS4 Information Model](https://pds.nasa.gov/pds4/doc/im/)
 	- Copy the generated files to the "build/IM version/LDD version" folder.
