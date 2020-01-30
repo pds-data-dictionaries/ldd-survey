@@ -142,9 +142,9 @@
 
     <!-- Attribute: Corner idenfication -->
     <DD_Attribute>
-        <name>image_type</name>
+        <name>observation_purpose</name>
         <version_id>1.0</version_id>
-        <local_identifier>image_type</local_identifier>
+        <local_identifier>observation_purpose</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>Identifies the kind of observation taken.</definition>
@@ -337,7 +337,7 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>image_type</identifier_reference>
+            <identifier_reference>observation_purpose</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
