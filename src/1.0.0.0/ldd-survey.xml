@@ -147,7 +147,7 @@
         <local_identifier>observation_purpose</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Identifies the kind of observation taken.</definition>
+        <definition>Identifies the intent of the observation, whether it is an actual survey observation, a followup, or a calibration image.</definition>
         <DD_Value_Domain>
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -174,7 +174,7 @@
         <local_identifier>observation_type</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Identifies the kind of observation taken.</definition>
+        <definition>Further classifies survey observations by the technique use to acquire it.</definition>
         <DD_Value_Domain>
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -208,7 +208,7 @@
         <local_identifier>calibration_type</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Identifies the kind of observation taken.</definition>
+        <definition>Further classifies calibration images by the type of calibration field used.</definition>
         <DD_Value_Domain>
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
