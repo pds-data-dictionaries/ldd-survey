@@ -40,6 +40,31 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
+    <DD_Attribute>
+        <name>n_sigma</name>
+        <version_id>1.0</version_id>
+        <local_identifier>n_sigma</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>Description here</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>Integer</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
+
+    <DD_Attribute>
+        <name>n_sigma_magnitude</name>
+        <version_id>1.0</version_id>
+        <local_identifier>n_sigma_magnitude</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>Description here</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
 
 
     <DD_Attribute>
@@ -297,12 +322,40 @@
     </DD_Class>
 
     <DD_Class>
+        <name>N_Sigma_Limiting_Magnitude</name>
+        <version_id>1.0</version_id>
+        <local_identifier>Limiting_Magnitude</local_identifier>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The limiting magnitude of the image</definition>
+        <element_flag>true</element_flag>
+        <DD_Association>
+            <identifier_reference>n_sigma</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>n_sigma_magnitude</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+    </DD_Class>
+
+
+    <DD_Class>
         <name>Limiting_Magnitude</name>
         <version_id>1.0</version_id>
         <local_identifier>Limiting_Magnitude</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of the image</definition>
         <element_flag>true</element_flag>
+        <DD_Association>
+            <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
         <DD_Association>
             <identifier_reference>rollover_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
