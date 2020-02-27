@@ -27,6 +27,20 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
+    <DD_Attribute>
+        <name>zero_percent_limiting_magnitude</name>
+        <version_id>1.0</version_id>
+        <local_identifier>zero_percent_limiting_magnitude</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>Description here</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
+
+
 
     <DD_Attribute>
         <name>rollover_magnitude</name>
@@ -303,6 +317,12 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>fifty_percent_limiting_magnitude</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>zero_percent_limiting_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
