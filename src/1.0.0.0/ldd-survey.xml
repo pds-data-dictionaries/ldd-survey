@@ -259,6 +259,10 @@
                 <value>Dark</value>
                 <value_meaning>Description here</value_meaning>
             </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Bias</value>
+                <value_meaning>Description here</value_meaning>
+            </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
 
