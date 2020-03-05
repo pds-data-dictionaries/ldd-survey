@@ -116,7 +116,7 @@
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Top Right</value>
-                <value_meaning>The top-left corner</value_meaning>
+                <value_meaning>The top-right corner</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Bottom Left</value>
