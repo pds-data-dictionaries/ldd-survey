@@ -179,7 +179,7 @@
         </DD_Value_Domain>
     </DD_Attribute>	
 
-    <!-- Attribute: Corner idenfication -->
+    <!-- Attribute: Observation purpose -->
     <DD_Attribute>
         <name>observation_purpose</name>
         <version_id>1.0</version_id>
@@ -206,7 +206,7 @@
     </DD_Attribute>
 
 
-    <!-- Attribute: Corner idenfication -->
+    <!-- Attribute: Observation type -->
     <DD_Attribute>
         <name>observation_type</name>
         <version_id>1.0</version_id>
@@ -240,7 +240,7 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
-    <!-- Attribute: Corner idenfication -->
+    <!-- Attribute: Calibration type -->
     <DD_Attribute>
         <name>calibration_type</name>
         <version_id>1.0</version_id>
