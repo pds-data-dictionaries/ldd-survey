@@ -218,8 +218,12 @@
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
             <DD_Permissible_Value>
-                <value>Drift Scan</value>
-                <value_meaning>A drift scan, taken by (description)</value_meaning>
+                <value>Sidereal Drift Scan</value>
+                <value_meaning>A sidereal drift scan, taken by (description)</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Non-Sidereal Drift Scan</value>
+                <value_meaning>A non-sidereal drift scan, taken by (description)</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Sidereal stare</value>
@@ -227,10 +231,6 @@
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Non-sidereal stare</value>
-                <value_meaning>Description here</value_meaning>
-            </DD_Permissible_Value>
-            <DD_Permissible_Value>
-                <value>Tracked</value>
                 <value_meaning>Description here</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
