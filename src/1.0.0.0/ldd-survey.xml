@@ -15,22 +15,9 @@
 	<last_modification_date_time>2019-10-10T20:41:00.000Z</last_modification_date_time>
 
     <DD_Attribute>
-        <name>fifty_percent_limiting_magnitude</name>
+        <name>limiting_magnitude_percentage</name>
         <version_id>1.0</version_id>
-        <local_identifier>fifty_percent_limiting_magnitude</local_identifier>
-        <nillable_flag>false</nillable_flag>
-        <submitter_name>Jesse Stone</submitter_name>
-        <definition>Description here</definition>
-        <DD_Value_Domain>
-            <enumeration_flag>false</enumeration_flag>
-            <value_data_type>ASCII_Real</value_data_type>
-        </DD_Value_Domain>
-    </DD_Attribute>
-
-    <DD_Attribute>
-        <name>zero_percent_limiting_magnitude</name>
-        <version_id>1.0</version_id>
-        <local_identifier>zero_percent_limiting_magnitude</local_identifier>
+        <local_identifier>limiting_magnitude_percentage</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The percentage of known asteroids that are detected at the given V-band magnitude</definition>
@@ -49,14 +36,14 @@
         <definition>Description here</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
-            <value_data_type>Integer</value_data_type>
+            <value_data_type>ASCII_Integer</value_data_type>
         </DD_Value_Domain>
     </DD_Attribute>
 
     <DD_Attribute>
-        <name>n_sigma_magnitude</name>
+        <name>limiting_magnitude_value</name>
         <version_id>1.0</version_id>
-        <local_identifier>n_sigma_magnitude</local_identifier>
+        <local_identifier>limiting_magnitude_value</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>V-band magnitude at which a threshold known asteroids are detected</definition>
@@ -341,13 +328,33 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>n_sigma_magnitude</identifier_reference>
+            <identifier_reference>limiting_magnitude_value</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
     </DD_Class>
 
+    <DD_Class>
+        <name>Percentage_Limiting_Magnitude</name>
+        <version_id>1.0</version_id>
+        <local_identifier>Limiting_Magnitude</local_identifier>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The limiting magnitude of the image</definition>
+        <element_flag>true</element_flag>
+        <DD_Association>
+            <identifier_reference>limiting_magnitude_percentage</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>limiting_magnitude_value</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+    </DD_Class>
 
     <DD_Class>
         <name>Limiting_Magnitude</name>
@@ -363,6 +370,12 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
+            <identifier_reference>Percentage_Limiting_Magnitude</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>*</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
             <identifier_reference>rollover_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
@@ -370,18 +383,6 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>rollover_fwhm</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
-            <identifier_reference>fifty_percent_limiting_magnitude</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
-            <identifier_reference>zero_percent_limiting_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
