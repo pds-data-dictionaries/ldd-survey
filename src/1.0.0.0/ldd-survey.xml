@@ -33,7 +33,7 @@
         <local_identifier>zero_percent_limiting_magnitude</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Description here</definition>
+        <definition>The percentage of known asteroids that are detected at the given V-band magnitude</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -59,7 +59,7 @@
         <local_identifier>n_sigma_magnitude</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Description here</definition>
+        <definition>V-band magnitude at which a threshold known asteroids are detected</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -73,8 +73,10 @@
         <local_identifier>rollover_magnitude</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The magnitude of the peak of the histogram of stellar
-                    magnitudes in the image.</definition>
+        <definition>ROLLOMAG (rollover magnitude) is the magnitude of the peak of the histogram of stellar magnitudes in the image. ROLLOSNR is the SNR at the magnitude of the peak of the histogram of stellar magnitudes in the image. ROLLOFWHM is the full width at half maximum in arcseconds of stellar sources at the magnitude of the peak of the histogram of stellar magnitudes in the image.
+        
+        Up to approximately magnitude 22, one can expect greater numbers of fainter stars than brighter stars. Due to detection limits, however, not every faint star is detected. A histogram of the magnitudes of stars detected in the image has a peak bin with the greatest number of stars in that magnitude range. Stars were binned in 0.2-magnitude-wide bins. The central magnitude of the bin with the greatest number of stars was recorded with the FITS keyword "ROLLOMAG" since the slope of the number count histogram rolls over at that magnitude. The detected object statistics were used to compute the SNR at the rollover magnitude in the image, denoted by ROLLOSNR.                    
+                    </definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -172,7 +174,7 @@
         <local_identifier>field_id</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The id code for the field being observed</definition>
+        <definition>Project-dependent field ID</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -253,7 +255,7 @@
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
             <DD_Permissible_Value>
                 <value>Flat field</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>CCD flat field image</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Dark</value>
