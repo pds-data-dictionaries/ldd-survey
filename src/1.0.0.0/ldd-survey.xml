@@ -33,7 +33,7 @@
         <local_identifier>n_sigma</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Description here</definition>
+        <definition>The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Integer</value_data_type>
@@ -208,23 +208,23 @@
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
             <DD_Permissible_Value>
                 <value>Sidereal Drift Scan</value>
-                <value_meaning>A sidereal drift scan, taken by (description)</value_meaning>
+                <value_meaning>A sidereal drift scan.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Non-Sidereal Drift Scan</value>
-                <value_meaning>A non-sidereal drift scan, taken by (description)</value_meaning>
+                <value_meaning>A non-sidereal drift scan.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Sidereal stare</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>Standard observations taken at sidereal rates.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Non-sidereal stare</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>Standard observations taken at non-sidereal rates.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Track-and-stack</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>Combination of multiple images of the same field.</value_meaning>
             </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
@@ -246,11 +246,11 @@
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Dark</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>CCD dark image</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
                 <value>Bias</value>
-                <value_meaning>Description here</value_meaning>
+                <value_meaning>CCD bias image</value_meaning>
             </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
