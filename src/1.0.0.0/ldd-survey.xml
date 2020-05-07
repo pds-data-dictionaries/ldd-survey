@@ -30,10 +30,10 @@
     <DD_Attribute>
         <name>n_sigma</name>
         <version_id>1.0</version_id>
-        <local_identifier>n_sigma</local_identifier>
+        <local_identifier>n_sigma_n_value</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
+        <definition>Represents the value of n for N-Sigma limiting magnitude: The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -316,10 +316,10 @@
         <version_id>1.0</version_id>
         <local_identifier>N_Sigma_Limiting_Magnitude</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The limiting magnitude of the image</definition>
+        <definition>The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
         <element_flag>false</element_flag>
         <DD_Association>
-            <identifier_reference>n_sigma</identifier_reference>
+            <identifier_reference>n_sigma_n_value</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
