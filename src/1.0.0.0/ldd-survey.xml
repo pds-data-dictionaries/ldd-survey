@@ -348,11 +348,11 @@
     </DD_Class>
 
     <DD_Class>
-        <name>Percentage_Limiting_Magnitude</name>
+        <name>Limiting_Magnitude_By_Percentage</name>
         <version_id>1.0</version_id>
-        <local_identifier>Percentage_Limiting_Magnitude</local_identifier>
+        <local_identifier>Limiting_Magnitude_By_Percentage</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The limiting magnitude of the image</definition>
+        <definition>The limiting magnitude of the image, expressed as a magnitude, and the percentage of known asteroids detected at that magnitude</definition>
         <element_flag>false</element_flag>
         <DD_Association>
             <identifier_reference>limiting_magnitude_percentage</identifier_reference>
@@ -382,7 +382,7 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>Percentage_Limiting_Magnitude</identifier_reference>
+            <identifier_reference>Limiting_Magnitude_By_Percentage</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
