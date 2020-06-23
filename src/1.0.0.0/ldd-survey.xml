@@ -60,7 +60,7 @@
         <local_identifier>rollover_magnitude</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>ROLLOMAG (rollover magnitude) is the magnitude of the peak of the histogram of stellar magnitudes in the image. ROLLOSNR is the SNR at the magnitude of the peak of the histogram of stellar magnitudes in the image. ROLLOFWHM is the full width at half maximum in arcseconds of stellar sources at the magnitude of the peak of the histogram of stellar magnitudes in the image.</definition>
+        <definition>The magnitude of the peak of the histogram of stellar magnitudes in the image.</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
