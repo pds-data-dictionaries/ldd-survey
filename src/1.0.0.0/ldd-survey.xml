@@ -407,6 +407,54 @@
         </DD_Association>
     </DD_Class>
 
+    <DD_Class>
+        <name>Limiting_Magnitude</name>
+        <version_id>1.0</version_id>
+        <local_identifier>Limiting_Magnitude</local_identifier>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The limiting magnitude of the image</definition>
+        <element_flag>false</element_flag>
+        <DD_Association>
+            <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
+            <reference_type>component_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>Limiting_Magnitude_By_Percentage</identifier_reference>
+            <reference_type>component_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>*</maximum_occurrences>
+        </DD_Association>
+    </DD_Class>
+
+    <DD_Class>
+        <name>Rollover</name>
+        <version_id>1.0</version_id>
+        <local_identifier>Rollover</local_identifier>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>Placeholder</definition>
+        <element_flag>false</element_flag>
+        <DD_Association>
+            <identifier_reference>rollover_magnitude</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>rollover_fwhm</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>rollover_snr</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+    </DD_Class>
+
 
     <!-- Class: Spacewatch -->
     <DD_Class>
@@ -424,6 +472,12 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>Limiting_Magnitude</identifier_reference>
+            <reference_type>component_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>Rollover</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
