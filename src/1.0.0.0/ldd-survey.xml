@@ -15,12 +15,38 @@
 	<last_modification_date_time>2019-10-10T20:41:00.000Z</last_modification_date_time>
 
     <DD_Attribute>
+        <name>band_name</name>
+        <version_id>1.0</version_id>
+        <local_identifier>band_name</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The band for which the limiting magnitude specification is applicable</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
+
+    <DD_Attribute>
+        <name>limiting_magnitude_object_type</name>
+        <version_id>1.0</version_id>
+        <local_identifier>limiting_magnitude_object_type</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The type of observed object used to calculate the limiting magnitude</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
+
+    <DD_Attribute>
         <name>limiting_magnitude_percentage</name>
         <version_id>1.0</version_id>
         <local_identifier>limiting_magnitude_percentage</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The percentage of known asteroids that are detected at the given V-band magnitude</definition>
+        <definition>The percentage of known objects that are detected at the given magnitude for the specified band</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -46,7 +72,7 @@
         <local_identifier>limiting_magnitude_value</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>V-band magnitude at which a threshold known asteroids are detected</definition>
+        <definition>Magnitude at which a threshold known objects are detected</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -377,7 +403,7 @@
         <version_id>1.0</version_id>
         <local_identifier>Limiting_Magnitude_By_Percentage</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The limiting magnitude of the image, expressed as a magnitude, and the percentage of known asteroids detected at that magnitude</definition>
+        <definition>The limiting magnitude of the image, expressed as a magnitude, and the percentage of known objects detected at that magnitude</definition>
         <element_flag>false</element_flag>
         <DD_Association>
             <identifier_reference>limiting_magnitude_percentage</identifier_reference>
@@ -400,6 +426,18 @@
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of the image</definition>
         <element_flag>false</element_flag>
+        <DD_Association>
+            <identifier_reference>band_name</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>limiting_magnitude_object_type</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
         <DD_Association>
             <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
             <reference_type>component_of</reference_type>
