@@ -132,12 +132,31 @@
 
     <!-- Attribute: Right ascension -->
     <DD_Attribute>
+        <name>epoch</name>
+        <version_id>1.0</version_id>
+        <local_identifier>epoch</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The epoch of a coordinate</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+            <minimum_value>0</minimum_value>
+            <maximum_value>360</maximum_value>
+            <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
+            <specified_unit_id>deg</specified_unit_id>
+        </DD_Value_Domain>
+    </DD_Attribute>
+
+
+    <!-- Attribute: Right ascension -->
+    <DD_Attribute>
         <name>right_ascension</name>
         <version_id>1.0</version_id>
         <local_identifier>right_ascension</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The right ascension component of a coordinate, in J2000 decimal degrees</definition>
+        <definition>The right ascension component of a coordinate, decimal degrees</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -155,7 +174,7 @@
         <local_identifier>declination</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The declination component of a coordinate, in J2000 decimal degrees</definition>
+        <definition>The declination component of a coordinate, decimal degrees</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -276,6 +295,12 @@
         <local_identifier>Coordinate</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>A location on the celestial sphere, consisting of right ascension and declination.</definition>
+        <DD_Association>
+            <identifier_reference>epoch</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
         <DD_Association>
             <identifier_reference>right_ascension</identifier_reference>
             <reference_type>attribute_of</reference_type>
