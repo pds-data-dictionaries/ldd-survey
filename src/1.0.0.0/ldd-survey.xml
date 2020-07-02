@@ -166,14 +166,32 @@
         <definition>The epoch of a coordinate</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
-            <value_data_type>ASCII_Real</value_data_type>
-            <minimum_value>0</minimum_value>
-            <maximum_value>360</maximum_value>
-            <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
-            <specified_unit_id>deg</specified_unit_id>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <DD_Permissible_Value>
+                <value>Besselian</value>
+                <value_meaning>Besselian epoch</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Julian</value>
+                <value_meaning>Julian epoch</value_meaning>
+            </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
 
+        <!-- Attribute: Right ascension -->
+        <DD_Attribute>
+            <name>equinox</name>
+            <version_id>1.0</version_id>
+            <local_identifier>equinox</local_identifier>
+            <nillable_flag>false</nillable_flag>
+            <submitter_name>Jesse Stone</submitter_name>
+            <definition>The equinox of a coordinate</definition>
+            <DD_Value_Domain>
+                <enumeration_flag>false</enumeration_flag>
+                <value_data_type>ASCII_Real</value_data_type>
+            </DD_Value_Domain>
+        </DD_Attribute>
+    
 
     <!-- Attribute: Right ascension -->
     <DD_Attribute>
@@ -322,12 +340,6 @@
         <submitter_name>Jesse Stone</submitter_name>
         <definition>A location on the celestial sphere, consisting of right ascension and declination.</definition>
         <DD_Association>
-            <identifier_reference>epoch</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>1</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
             <identifier_reference>right_ascension</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
@@ -369,6 +381,18 @@
         <local_identifier>Footprint</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The portion of the sky contained within an image, identified by its four corners</definition>
+        <DD_Association>
+            <identifier_reference>epoch</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>equinox</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>1</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
         <DD_Association>
             <identifier_reference>Corner_Position</identifier_reference>
             <reference_type>component_of</reference_type>
