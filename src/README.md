@@ -1,8 +1,8 @@
-# {Template} Local Data Dictionary (LDD)
+# Survey Local Data Dictionary (LDD)
 
-The {Template} dictionary contains classes that describe aspects of a fictious mission and related instruments.
+The Survey dictionary contains classes that support ground-based sky surveys.
 
-Steward: PPI
+Steward: SBN
 
 ## Versions
 
