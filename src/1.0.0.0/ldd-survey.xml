@@ -481,7 +481,7 @@
         <version_id>1.0</version_id>
         <local_identifier>Rollover</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Placeholder</definition>
+        <definition>The properties of the peak of the histogram of stellar magnitudes within the image.</definition>
         <element_flag>false</element_flag>
         <DD_Association>
             <identifier_reference>rollover_magnitude</identifier_reference>
