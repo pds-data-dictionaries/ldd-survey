@@ -290,15 +290,15 @@
                 <value_meaning>A non-sidereal drift scan.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
-                <value>Sidereal stare</value>
+                <value>Sidereal Stare</value>
                 <value_meaning>Standard observations taken at sidereal rates.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
-                <value>Non-sidereal stare</value>
+                <value>Non-Sidereal Stare</value>
                 <value_meaning>Standard observations taken at non-sidereal rates.</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
-                <value>Track-and-stack</value>
+                <value>Track-And-Stack</value>
                 <value_meaning>Combination of multiple images of the same field.</value_meaning>
             </DD_Permissible_Value>
         </DD_Value_Domain>
