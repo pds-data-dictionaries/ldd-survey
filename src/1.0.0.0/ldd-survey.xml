@@ -316,7 +316,7 @@
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
             <DD_Permissible_Value>
-                <value>Flat field</value>
+                <value>Flat Field</value>
                 <value_meaning>CCD flat field image</value_meaning>
             </DD_Permissible_Value>
             <DD_Permissible_Value>
