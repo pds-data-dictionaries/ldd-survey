@@ -463,15 +463,11 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
+            <identifier_reference>XSChoice#</identifier_reference>
             <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
-            <reference_type>component_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
             <identifier_reference>Limiting_Magnitude_By_Percentage</identifier_reference>
             <reference_type>component_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
+            <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
         </DD_Association>
     </DD_Class>
