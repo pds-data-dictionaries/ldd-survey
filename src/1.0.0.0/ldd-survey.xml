@@ -156,7 +156,7 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
-    <!-- Attribute: Right ascension -->
+    <!-- Attribute: Epoch -->
     <DD_Attribute>
         <name>epoch</name>
         <version_id>1.0</version_id>
@@ -178,19 +178,19 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
-        <!-- Attribute: Right ascension -->
-        <DD_Attribute>
-            <name>equinox</name>
-            <version_id>1.0</version_id>
-            <local_identifier>equinox</local_identifier>
-            <nillable_flag>false</nillable_flag>
-            <submitter_name>Jesse Stone</submitter_name>
-            <definition>The equinox of a coordinate</definition>
-            <DD_Value_Domain>
-                <enumeration_flag>false</enumeration_flag>
-                <value_data_type>ASCII_Real</value_data_type>
-            </DD_Value_Domain>
-        </DD_Attribute>
+    <!-- Attribute: Equinox -->
+    <DD_Attribute>
+        <name>equinox</name>
+        <version_id>1.0</version_id>
+        <local_identifier>equinox</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Jesse Stone</submitter_name>
+        <definition>The equinox of a coordinate</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Real</value_data_type>
+        </DD_Value_Domain>
+    </DD_Attribute>
     
 
     <!-- Attribute: Right ascension -->
