@@ -41,9 +41,9 @@
     </DD_Attribute>
 
     <DD_Attribute>
-        <name>limiting_magnitude_percentage</name>
+        <name>percentage</name>
         <version_id>1.0</version_id>
-        <local_identifier>limiting_magnitude_percentage</local_identifier>
+        <local_identifier>percentage</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The percentage of known objects that are detected at the given magnitude for the specified band</definition>
@@ -54,9 +54,9 @@
     </DD_Attribute>
 
     <DD_Attribute>
-        <name>n_sigma</name>
+        <name>n_sigma_n</name>
         <version_id>1.0</version_id>
-        <local_identifier>n_sigma_n_value</local_identifier>
+        <local_identifier>n_sigma_n</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>Represents the value of n for N-Sigma limiting magnitude: The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
@@ -67,9 +67,9 @@
     </DD_Attribute>
 
     <DD_Attribute>
-        <name>limiting_magnitude_value</name>
+        <name>limiting_magnitude</name>
         <version_id>1.0</version_id>
-        <local_identifier>limiting_magnitude_value</local_identifier>
+        <local_identifier>limiting_magnitude</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>Magnitude at which a threshold known objects are detected</definition>
@@ -402,20 +402,20 @@
     </DD_Class>
 
     <DD_Class>
-        <name>N_Sigma_Limiting_Magnitude</name>
+        <name>N_Sigma_Limit</name>
         <version_id>1.0</version_id>
-        <local_identifier>N_Sigma_Limiting_Magnitude</local_identifier>
+        <local_identifier>N_Sigma_Limit</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
         <element_flag>false</element_flag>
         <DD_Association>
-            <identifier_reference>n_sigma_n_value</identifier_reference>
+            <identifier_reference>n_sigma_n</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>limiting_magnitude_value</identifier_reference>
+            <identifier_reference>limiting_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -423,20 +423,20 @@
     </DD_Class>
 
     <DD_Class>
-        <name>Limiting_Magnitude_By_Percentage</name>
+        <name>Percentage_Limit</name>
         <version_id>1.0</version_id>
-        <local_identifier>Limiting_Magnitude_By_Percentage</local_identifier>
+        <local_identifier>Percentage_Limit</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of the image, expressed as a magnitude, and the percentage of known objects detected at that magnitude</definition>
         <element_flag>false</element_flag>
         <DD_Association>
-            <identifier_reference>limiting_magnitude_percentage</identifier_reference>
+            <identifier_reference>percentage</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>limiting_magnitude_value</identifier_reference>
+            <identifier_reference>limiting_magnitude</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -444,9 +444,9 @@
     </DD_Class>
 
     <DD_Class>
-        <name>Limiting_Magnitude</name>
+        <name>Limiting_Magnitudes</name>
         <version_id>1.0</version_id>
-        <local_identifier>Limiting_Magnitude</local_identifier>
+        <local_identifier>Limiting_Magnitudes</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of the image</definition>
         <element_flag>false</element_flag>
@@ -464,8 +464,8 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>XSChoice#</identifier_reference>
-            <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
-            <identifier_reference>Limiting_Magnitude_By_Percentage</identifier_reference>
+            <identifier_reference>N_Sigma_Limit</identifier_reference>
+            <identifier_reference>Percentage_Limit</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -477,7 +477,7 @@
         <version_id>1.0</version_id>
         <local_identifier>Rollover</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Placeholder</definition>
+        <definition>The properties of the peak of the histogram of stellar magnitudes within the image.</definition>
         <element_flag>false</element_flag>
         <DD_Association>
             <identifier_reference>rollover_magnitude</identifier_reference>
@@ -539,7 +539,7 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>Limiting_Magnitude</identifier_reference>
+            <identifier_reference>Limiting_Magnitudes</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
