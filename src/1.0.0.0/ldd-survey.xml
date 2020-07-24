@@ -163,7 +163,7 @@
         <local_identifier>epoch</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The epoch of a coordinate</definition>
+        <definition>The epoch of the reference frame.</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -185,7 +185,7 @@
         <local_identifier>equinox</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The equinox of a coordinate</definition>
+        <definition>The equinox of the reference frame.</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
             <value_data_type>ASCII_Real</value_data_type>
@@ -272,9 +272,9 @@
 
     <!-- Attribute: Observation type -->
     <DD_Attribute>
-        <name>observation_type</name>
+        <name>observation_technique</name>
         <version_id>1.0</version_id>
-        <local_identifier>observation_type</local_identifier>
+        <local_identifier>observation_technique</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>Further classifies survey observations by the technique use to acquire it.</definition>
@@ -374,11 +374,11 @@
         </DD_Association>
     </DD_Class>
 
-    <!-- Class: Footprint -->
+    <!-- Class: Image_Corners -->
     <DD_Class>
-        <name>Footprint</name>
+        <name>Image_Corners</name>
         <version_id>1.0</version_id>
-        <local_identifier>Footprint</local_identifier>
+        <local_identifier>Image_Corners</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The portion of the sky contained within an image, identified by its four corners</definition>
         <DD_Association>
@@ -463,15 +463,11 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
+            <identifier_reference>XSChoice#</identifier_reference>
             <identifier_reference>N_Sigma_Limit</identifier_reference>
-            <reference_type>component_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
             <identifier_reference>Percentage_Limit</identifier_reference>
             <reference_type>component_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
+            <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
         </DD_Association>
     </DD_Class>
@@ -513,7 +509,31 @@
         <definition>Sky Survey related properties.</definition>
         <element_flag>true</element_flag>
         <DD_Association>
-            <identifier_reference>Footprint</identifier_reference>
+            <identifier_reference>field_id</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>observation_purpose</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>observation_technique</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>calibration_type</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>Image_Corners</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -530,32 +550,6 @@
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
-        <DD_Association>
-            <identifier_reference>field_id</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-        <DD_Association>
-            <identifier_reference>observation_purpose</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-
-        <DD_Association>
-            <identifier_reference>observation_type</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
-
-        <DD_Association>
-            <identifier_reference>calibration_type</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>0</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
     </DD_Class>
 
     <!-- 
@@ -564,12 +558,12 @@
 
         * Ensure that each corner is identified. 
         * Ensure that corner is identified only once. Given the existing 
-        restrictions on Footprint, this is satisfied by the above rule.
+        restrictions on Image_Corners, this is satisfied by the above rule.
 
     -->
     <DD_Rule>
         <local_identifier>rule_all_corners</local_identifier>
-        <rule_context>survey:Survey/survey:Footprint</rule_context>
+        <rule_context>survey:Survey/survey:Image_Corners</rule_context>
         <DD_Rule_Statement>
             <rule_type>Assert</rule_type>
             <rule_test>survey:Corner_Position/survey:corner_identification = 'Top Left'</rule_test>
