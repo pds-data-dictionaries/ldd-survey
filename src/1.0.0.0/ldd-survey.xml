@@ -7,7 +7,7 @@
 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
 
 	<name>Survey</name>
-	<ldd_version_id>1.0.0.0</ldd_version_id>
+	<ldd_version_id>0.9.1.0</ldd_version_id>
 	<full_name>Jesse Stone</full_name>
 	<steward_id>sbn</steward_id>
 	<namespace_id>survey</namespace_id>
@@ -603,7 +603,7 @@
     </DD_Rule>
 
     <DD_Rule>
-        <local_identifier>calibration_data_type</local_identifier>
+        <local_identifier>rule_calibration_data_type</local_identifier>
         <rule_context>survey:Survey[survey:observation_purpose='Calibration']</rule_context>
         <DD_Rule_Statement>
             <rule_type>Assert</rule_type>
