@@ -41,9 +41,9 @@
     </DD_Attribute>
 
     <DD_Attribute>
-        <name>limiting_magnitude_percentage</name>
+        <name>percentage</name>
         <version_id>1.0</version_id>
-        <local_identifier>limiting_magnitude_percentage</local_identifier>
+        <local_identifier>percentage</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The percentage of known objects that are detected at the given magnitude for the specified band</definition>
@@ -402,9 +402,9 @@
     </DD_Class>
 
     <DD_Class>
-        <name>N_Sigma_Limiting_Magnitude</name>
+        <name>N_Sigma_Limit</name>
         <version_id>1.0</version_id>
-        <local_identifier>N_Sigma_Limiting_Magnitude</local_identifier>
+        <local_identifier>N_Sigma_Limit</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)</definition>
         <element_flag>false</element_flag>
@@ -423,14 +423,14 @@
     </DD_Class>
 
     <DD_Class>
-        <name>Limiting_Magnitude_By_Percentage</name>
+        <name>Percentage_Limit</name>
         <version_id>1.0</version_id>
-        <local_identifier>Limiting_Magnitude_By_Percentage</local_identifier>
+        <local_identifier>Percentage_Limit</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The limiting magnitude of the image, expressed as a magnitude, and the percentage of known objects detected at that magnitude</definition>
         <element_flag>false</element_flag>
         <DD_Association>
-            <identifier_reference>limiting_magnitude_percentage</identifier_reference>
+            <identifier_reference>percentage</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -463,13 +463,13 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>N_Sigma_Limiting_Magnitude</identifier_reference>
+            <identifier_reference>N_Sigma_Limit</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <identifier_reference>Limiting_Magnitude_By_Percentage</identifier_reference>
+            <identifier_reference>Percentage_Limit</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
