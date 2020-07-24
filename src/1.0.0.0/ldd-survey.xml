@@ -374,11 +374,11 @@
         </DD_Association>
     </DD_Class>
 
-    <!-- Class: Footprint -->
+    <!-- Class: Image_Corners -->
     <DD_Class>
-        <name>Footprint</name>
+        <name>Image_Corners</name>
         <version_id>1.0</version_id>
-        <local_identifier>Footprint</local_identifier>
+        <local_identifier>Image_Corners</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The portion of the sky contained within an image, identified by its four corners</definition>
         <DD_Association>
@@ -513,7 +513,7 @@
         <definition>Sky Survey related properties.</definition>
         <element_flag>true</element_flag>
         <DD_Association>
-            <identifier_reference>Footprint</identifier_reference>
+            <identifier_reference>Image_Corners</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -564,12 +564,12 @@
 
         * Ensure that each corner is identified. 
         * Ensure that corner is identified only once. Given the existing 
-        restrictions on Footprint, this is satisfied by the above rule.
+        restrictions on Image_Corners, this is satisfied by the above rule.
 
     -->
     <DD_Rule>
         <local_identifier>rule_all_corners</local_identifier>
-        <rule_context>survey:Survey/survey:Footprint</rule_context>
+        <rule_context>survey:Survey/survey:Image_Corners</rule_context>
         <DD_Rule_Statement>
             <rule_type>Assert</rule_type>
             <rule_test>survey:Corner_Position/survey:corner_identification = 'Top Left'</rule_test>
