@@ -272,9 +272,9 @@
 
     <!-- Attribute: Observation type -->
     <DD_Attribute>
-        <name>observation_type</name>
+        <name>observation_technique</name>
         <version_id>1.0</version_id>
-        <local_identifier>observation_type</local_identifier>
+        <local_identifier>observation_technique</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>Further classifies survey observations by the technique use to acquire it.</definition>
@@ -540,7 +540,7 @@
         </DD_Association>
 
         <DD_Association>
-            <identifier_reference>observation_type</identifier_reference>
+            <identifier_reference>observation_technique</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
