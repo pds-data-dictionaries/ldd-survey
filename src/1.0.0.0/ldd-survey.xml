@@ -293,7 +293,7 @@
         <local_identifier>observation_technique</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>Further classifies survey observations by the technique use to acquire it.</definition>
+        <definition>Further classifies survey observations by the technique used to acquire it.</definition>
         <DD_Value_Domain>
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
