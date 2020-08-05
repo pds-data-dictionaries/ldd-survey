@@ -516,7 +516,6 @@
     </DD_Class>
 
 
-    <!-- Class: Spacewatch -->
     <DD_Class>
         <name>Survey</name>
         <version_id>1.1</version_id>
@@ -611,5 +610,5 @@
             <rule_message>The "Calibration" observation type may only be used with Products with a purpose of "Calibration"</rule_message>
         </DD_Rule_Statement>
     </DD_Rule>
--->
+
 </Ingest_LDD>
