@@ -7,7 +7,7 @@
 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
 
 	<name>Survey</name>
-	<ldd_version_id>0.9.1.1</ldd_version_id>
+	<ldd_version_id>0.9.2</ldd_version_id>
 	<full_name>Jesse Stone</full_name>
 	<steward_id>sbn</steward_id>
 	<namespace_id>survey</namespace_id>
