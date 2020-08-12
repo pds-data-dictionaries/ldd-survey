@@ -343,6 +343,10 @@
                 <value>Bias</value>
                 <value_meaning>CCD bias image</value_meaning>
             </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Fringe Correction</value>
+                <value_meaning>Fringe Correction image</value_meaning>
+            </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
 
