@@ -179,10 +179,10 @@
         <local_identifier>equinox</local_identifier>
         <nillable_flag>false</nillable_flag>
         <submitter_name>Jesse Stone</submitter_name>
-        <definition>The equinox of the reference frame.</definition>
+        <definition>Time that defines the origin of a celestial coordinate system, given in fractional year. Type of year may also be indicated. For example, 'J2000.0' corresponds to an origin specified by January 1, 2000 at 12:00 Terrestrial Time in Julian years.</definition>
         <DD_Value_Domain>
             <enumeration_flag>false</enumeration_flag>
-            <value_data_type>ASCII_Real</value_data_type>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
         </DD_Value_Domain>
     </DD_Attribute>
     

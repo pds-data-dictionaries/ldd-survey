@@ -51,7 +51,7 @@
         <survey:observation_purpose>Survey</survey:observation_purpose>
         <survey:observation_technique>Sidereal Stare</survey:observation_technique>
         <survey:Image_Corners>
-          <survey:equinox>2000.0</survey:equinox>
+          <survey:equinox>J2000.0</survey:equinox>
           <survey:Corner_Position>
             <survey:corner_identification>Top Left</survey:corner_identification>
             <survey:Coordinate>
