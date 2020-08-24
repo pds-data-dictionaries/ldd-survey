@@ -172,28 +172,6 @@
         </DD_Value_Domain>
     </DD_Attribute>
 
-    <!-- Attribute: Epoch -->
-    <DD_Attribute>
-        <name>epoch</name>
-        <version_id>1.0</version_id>
-        <local_identifier>epoch</local_identifier>
-        <nillable_flag>false</nillable_flag>
-        <submitter_name>Jesse Stone</submitter_name>
-        <definition>The epoch of the reference frame.</definition>
-        <DD_Value_Domain>
-            <enumeration_flag>false</enumeration_flag>
-            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-            <DD_Permissible_Value>
-                <value>Besselian</value>
-                <value_meaning>Besselian epoch</value_meaning>
-            </DD_Permissible_Value>
-            <DD_Permissible_Value>
-                <value>Julian</value>
-                <value_meaning>Julian epoch</value_meaning>
-            </DD_Permissible_Value>
-        </DD_Value_Domain>
-    </DD_Attribute>
-
     <!-- Attribute: Equinox -->
     <DD_Attribute>
         <name>equinox</name>
@@ -401,12 +379,6 @@
         <local_identifier>Image_Corners</local_identifier>
         <submitter_name>Jesse Stone</submitter_name>
         <definition>The portion of the sky contained within an image, identified by its four corners</definition>
-        <DD_Association>
-            <identifier_reference>epoch</identifier_reference>
-            <reference_type>attribute_of</reference_type>
-            <minimum_occurrences>1</minimum_occurrences>
-            <maximum_occurrences>1</maximum_occurrences>
-        </DD_Association>
         <DD_Association>
             <identifier_reference>equinox</identifier_reference>
             <reference_type>attribute_of</reference_type>

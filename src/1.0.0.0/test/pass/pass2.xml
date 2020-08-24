@@ -51,7 +51,6 @@
         <survey:observation_purpose>Calibration</survey:observation_purpose>
         <survey:observation_technique>Sidereal Stare</survey:observation_technique>
         <survey:Image_Corners>
-          <survey:epoch>Julian</survey:epoch>
           <survey:equinox>2000.0</survey:equinox>
           <survey:Corner_Position>
             <survey:corner_identification>Top Left</survey:corner_identification>
