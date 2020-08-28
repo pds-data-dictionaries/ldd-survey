@@ -1,9 +1,4 @@
-# Survey Local Data Dictionary (LDD)
+# Generate
 
-The Survey dictionary contains classes that support ground-based sky surveys.
-
-Steward: SBN
-
-## Versions
-
-- [1.0.0.0](1.0.0.0)
+This should be documentation for the Local Data Dictionary.
+It can be generated using 'ldd-doc' tool.
