@@ -1,0 +1,364 @@
+PDS4 Local Data Dictionary Processing Report
+
+Configuration:
+   LDDTool Version        0.2.1.3
+   Time                   Mon Aug 24 14:41:08 MST 2020
+   Core Schemas           [PDS4_PDS_1900.xsd]
+   Core Schematrons       [PDS4_PDS_1900.sch]
+   Common Model Version   1.9.0.0
+   Object Model           [UpperModel.pont]
+   Data Dictionary        [dd11179.pins]
+   Configuration File     [MDPTNConfigClassDisp.xml]
+   Glossary               [Glossary.pins]
+   Document Spec          [DMDocument.pins]
+
+Parameters:
+   Input File             [ldd-survey.xml]
+   PDS Processing         true
+   LDD Processing         true
+   Discipline LDD         true
+   Mission LDD            false
+   Write Class Elements   false
+   Write Attr Elements    false
+   Merge with Master      false
+
+Summary:
+   Classes                9
+   Attributes             16
+   Associations           25
+   Error messages         0
+   Warning messages       2
+   Information messages   4
+
+Detailed validation messages
+   WARNING  Header:  - New steward has been specified:sbn
+   WARNING  Header:  - New namespace id has been specified:survey
+   INFO     Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+   INFO     Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+   INFO     Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+   INFO     Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+
+Parsed Input - Header:
+   LDD Name               Survey
+   LDD Version            1.0.0
+   Full Name              Jesse Stone
+   Steward                sbn
+   Namespace Id           survey
+   Comment                The Survey dictionary contains classes that support ground based sky surveys.
+   Last Modification Time 2020-08-24T20:41:00.000Z
+   PDS4 Merge Flag        false
+
+Parsed Input - Attributes:
+
+   name                   band_name
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            The band for which the limiting magnitude specification is applicable
+
+   name                   reference_object_type
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            The type of observed object used to calculate the limiting magnitude
+   permissible value - value meaning
+      Asteroid - Asteroid
+      Comet - Comet
+      Galaxy - Galaxy
+      Star - Star
+
+   name                   percentage
+   version                1.5
+   value data type        ASCII_Real
+   description            The percentage of known objects that are detected at the given magnitude for the specified band
+
+   name                   n_sigma_n
+   version                1.5
+   value data type        ASCII_Real
+   description            Represents the value of n for n-sigma limiting magnitude: The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)
+
+   name                   limiting_magnitude
+   version                1.5
+   value data type        ASCII_Real
+   description            Magnitude at which a threshold known objects are detected
+
+   name                   rollover_magnitude
+   version                1.5
+   value data type        ASCII_Real
+   description            The magnitude of the peak of the histogram of stellar magnitudes in the image.
+
+   name                   rollover_snr
+   version                1.5
+   value data type        ASCII_Real
+   description            The SNR at the magnitude of the peak of the histogram of stellar magnitudes in the image.
+
+   name                   rollover_fwhm
+   version                1.5
+   value data type        ASCII_Real
+   description            The full width at half maximum of stellar sources at the magnitude of the peak of the histogram of stellar magnitudes in the image, in arcseconds
+   unit of measure type   Units_of_Angle
+
+   name                   corner_identification
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Identifies which corner of the image is being located. This assumes that the image is displayed correctly according to the orientation information provided in the display dictionary
+   permissible value - value meaning
+      Top Left - The top-left corner
+      Top Right - The top-right corner
+      Bottom Left - The bottom-left corner
+      Bottom Right - The bottom-right corner
+
+   name                   equinox
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Time that defines the origin of a celestial coordinate system, given in fractional year. Type of year may also be indicated. For example, 'J2000.0' corresponds to an origin specified by January 1, 2000 at 12:00 Terrestrial Time in Julian years.
+
+   name                   right_ascension
+   version                1.5
+   value data type        ASCII_Real
+   description            The right ascension component of a coordinate, decimal degrees
+   minimum value          0
+   maximum value          360
+   unit of measure type   Units_of_Angle
+
+   name                   declination
+   version                1.5
+   value data type        ASCII_Real
+   description            The declination component of a coordinate, decimal degrees
+   minimum value          -90
+   maximum value          90
+   unit of measure type   Units_of_Angle
+
+   name                   field_id
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Project-dependent field ID
+
+   name                   observation_purpose
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Identifies the intent of the observation, whether it is an actual survey observation, a followup, or a calibration image.
+   permissible value - value meaning
+      Followup - Followup observation
+      Survey - A survey image of an area
+      Calibration - A calibration image, such as a dark or flat field
+
+   name                   observation_technique
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Further classifies survey observations by the technique used to acquire it.
+   permissible value - value meaning
+      Sidereal Drift Scan - A sidereal drift scan.
+      Non-Sidereal Drift Scan - A non-sidereal drift scan.
+      Sidereal Stare - Standard observations taken at sidereal rates.
+      Non-Sidereal Stare - Standard observations taken at non-sidereal rates.
+      Track-And-Stack - Combination of multiple images of the same field.
+
+   name                   calibration_type
+   version                1.5
+   value data type        ASCII_Short_String_Collapsed
+   description            Further classifies calibration images by the type of calibration field used.
+   permissible value - value meaning
+      Flat Field - CCD flat field image
+      Dark - CCD dark image
+      Bias - CCD bias image
+      Fringe Correction - Fringe Correction image
+
+Parsed Input - Classes:
+
+   name                   Coordinate
+   description            A location on the celestial sphere, consisting of right ascension and declination.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      right_ascension
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      declination
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Corner_Position
+   description            The position of one corner of an image
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      corner_identification
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      Coordinate
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+   name                   Image_Corners
+   description            The portion of the sky contained within an image, identified by its four corners
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      equinox
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      Corner_Position
+      minimum occurrences   4
+      maximum occurrences   4
+      reference type        component_of
+
+   name                   N_Sigma_Limit
+   description            The limiting magnitude of a point source at a significance of n-sigma (i.e. a S/N of n)
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      n_sigma_n
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      limiting_magnitude
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Percentage_Limit
+   description            The limiting magnitude of the image, expressed as a magnitude, and the percentage of known objects detected at that magnitude
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      percentage
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      limiting_magnitude
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Limiting_Magnitudes
+   description            The limiting magnitude of the image
+   is abstract            false
+   is choice              true
+   subclass of            USER
+
+   Associations
+
+      local identifier      band_name
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      reference_object_type
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      XSChoice#11
+      minimum occurrences   1
+      maximum occurrences   *
+      reference type        component_of
+
+      local identifier      N_Sigma_Limit
+      minimum occurrences   1
+      maximum occurrences   *
+      reference type        component_of
+
+      local identifier      Percentage_Limit
+      minimum occurrences   1
+      maximum occurrences   *
+      reference type        component_of
+
+   name                   XSChoice#11
+   description            TBD_description
+   is abstract            true
+   is choice              true
+   subclass of            USER
+
+   Associations
+
+   name                   Rollover
+   description            The properties of the peak of the histogram of stellar magnitudes within the image.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      rollover_magnitude
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      rollover_fwhm
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      rollover_snr
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Survey
+   description            Sky Survey related properties.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      field_id
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      observation_purpose
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      observation_technique
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      calibration_type
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      Image_Corners
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      Limiting_Magnitudes
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      Rollover
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+End of Report
