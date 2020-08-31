@@ -25,13 +25,13 @@
     </Identification_Area>
     <File_Area_XML_Schema>
         <File>
-            <file_name>ldd-survey_SURVEY_1000.xsd</file_name>
+            <file_name>PDS4_SURVEY_1A00_1000.xsd</file_name>
             <creation_date_time>2020-08-31T13:39:27</creation_date_time>
             <file_size unit="byte">15634</file_size>
             <records>360</records>
         </File>
         <XML_Schema>
-            <name>ldd-survey_SURVEY_1000.xsd</name>
+            <name>PDS4_SURVEY_1A00_1000.xsd</name>
             <offset unit="byte">0</offset>
             <parsing_standard_id>XML Schema Version 1.1</parsing_standard_id>
             <description>This is a PDS4 XML Schema file for the declared namespace.</description>
@@ -39,13 +39,13 @@
     </File_Area_XML_Schema>
     <File_Area_XML_Schema>
         <File>
-            <file_name>ldd-survey_SURVEY_1000.sch</file_name>
+            <file_name>PDS4_SURVEY_1A00_1000.sch</file_name>
             <creation_date_time>2020-08-31T13:39:27</creation_date_time>
             <file_size unit="byte">4999</file_size>
             <records>86</records>
         </File>
         <XML_Schema>
-            <name>ldd-survey_SURVEY_1000.sch</name>
+            <name>PDS4_SURVEY_1A00_1000.sch</name>
             <offset unit="byte">0</offset>
             <parsing_standard_id>Schematron ISO/IEC 19757-3:2006</parsing_standard_id>
             <description>This is the PDS4 Schematron file for the declared namespace. Schematron provides rule-based validation for XML Schema.</description>
