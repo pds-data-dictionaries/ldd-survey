@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        12.0.0
-   LDD Version Id:        1.0.0
+   LDDTool Version        12.0.3
+   LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Oct 14 20:41:17 UTC 2020
+   Time                   Mon Jan 04 18:30:02 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -40,7 +40,7 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Survey
-   LDD Version            1.0.0
+   LDD Version            1.0.0.0
    Full Name              Jesse Stone
    Steward                sbn
    Namespace Id           survey
