@@ -2,12 +2,12 @@ PDS4 Local Data Dictionary Processing Report
 
 Configuration:
    LDDTool Version        0.0.0
-   LDD Version Id:        1.0.0.0
+   LDD Version Id:        1.0.1.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Mon Jan 04 18:30:04 UTC 2021
+   Time                   Wed Mar 17 18:03:40 UTC 2021
    Common Schema          [PDS4_PDS_1E00.xsd]
    Common Schematron      [PDS4_PDS_1E00.sch]
    IM Version Id:         1.14.0.0
@@ -40,12 +40,12 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Survey
-   LDD Version            1.0.0.0
+   LDD Version            1.0.1.0
    Full Name              Jesse Stone
    Steward                sbn
    Namespace Id           survey
    Comment                The Survey dictionary contains classes that support ground based sky surveys.
-   Last Modification Time 2020-08-24T20:41:00.000Z
+   Last Modification Time 2021-02-22T21:30:00.000Z
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
@@ -309,7 +309,7 @@ Parsed Input - Classes:
       reference type        attribute_of
 
       local identifier      Image_Corners
-      minimum occurrences   1
+      minimum occurrences   0
       maximum occurrences   1
       reference type        component_of
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.0.0.0 - Mon Jan 04 18:30:02 UTC 2021 -->
+  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.0.1.0 - Wed Mar 17 18:03:44 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -34,6 +34,12 @@
     <sch:rule context="survey:Survey[survey:observation_purpose='Calibration']">
       <sch:assert test="//pds:Primary_Result_Summary[pds:purpose='Calibration']">
         The "Calibration" observation type may only be used with Products with a purpose of "Calibration"</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="survey:Survey[survey:observation_purpose!='Calibration']">
+      <sch:assert test="survey:Image_Corners">
+        Observations that are not for calibration must specify the image corners.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
