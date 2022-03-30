@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1F00_1810.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1F00_1500.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/survey/v1/PDS4_SURVEY_1F00_1010.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
+<!-- Test requirement that rollover_fwhm unit is set to 'arcsec'.
+  This test should produce a failure, because rollover_fwhm is set to 'deg'.
+  -->
 <Product_Observational 
 xmlns="http://pds.nasa.gov/pds4/pds/v1" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:img="http://pds.nasa.gov/pds4/img/v1" 
-xmlns:geom="http://pds.nasa.gov/pds4/geom/v1" 
-xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" 
 xmlns:survey="http://pds.nasa.gov/pds4/survey/v1" 
 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd
-                    http://pds.nasa.gov/pds4/img/v1 https://pds.nasa.gov/pds4/img/v1/PDS4_IMG_1F00_1810.xsd
-                    http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1F00_1910.xsd
-                    http://pds.nasa.gov/pds4/disp/v1 https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1F00_1500.xsd
                     http://pds.nasa.gov/pds4/survey/v1 https://pds.nasa.gov/pds4/survey/v1/PDS4_SURVEY_1F00_1010.xsd">
   <Identification_Area>
     <logical_identifier>urn:nasa:pds:gbo.ast.spacewatch.survey:data:sw_0993_09.01_2003_03_23_09_18_47.001.fits</logical_identifier>
@@ -118,6 +112,7 @@ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pd
         </survey:Image_Corners>
      <survey:Rollover>
         <survey:rollover_magnitude>21.80</survey:rollover_magnitude >
+       <!-- This statement violates the requirement that unit for rollover_fwhm be 'arcsec'. -->
         <survey:rollover_fwhm unit="deg">3.50</survey:rollover_fwhm >
          <survey:rollover_snr>3.80</survey:rollover_snr>
      </survey:Rollover>
