@@ -1,12 +1,14 @@
 
 >>  INFO LDDTOOL Version: 13.1.0
->>  INFO IM Version Id: 1.15.0.0
+>>  INFO IM Version Id: 1.14.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.21
->>  INFO Date: Wed Mar 30 22:23:29 UTC 2022
+>>  INFO IM Label Version Id: 1.20
+>>  INFO Date: Wed Mar 30 23:31:40 UTC 2022
 >>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
+>>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Rule
+>>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Assert
 
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
@@ -19,13 +21,13 @@
 >>> WARNING Header:  - New namespace id has been specified:survey
 
  -- LDDTool Execution Summary --
-     3 warning(s)
+     5 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1F00
+     - IM Version: 1E00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -35,9 +37,9 @@ Input:
 
 Output:
 
-     - ./PDS4_SURVEY_1F00_1010.xsd
-     - ./PDS4_SURVEY_1F00_1010.sch
-     - ./PDS4_SURVEY_1F00_1010.xml
-     - ./PDS4_SURVEY_1F00_1010.JSON
+     - ./PDS4_SURVEY_1E00_1010.xsd
+     - ./PDS4_SURVEY_1E00_1010.sch
+     - ./PDS4_SURVEY_1E00_1010.xml
+     - ./PDS4_SURVEY_1E00_1010.JSON
 
 >>  INFO Exit(0)
