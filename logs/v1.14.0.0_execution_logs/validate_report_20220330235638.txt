@@ -1,0 +1,51 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version                       2.1.4
+   Date                          2022-03-30T23:56:39Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units_VALID.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-survey/ldd-survey/build/development/8b52866089c106797134cf0778e7f972a7de960a/1.14.0.0/PDS4_SURVEY_1E00_1010.xsd, file:/tmp/PDS4_PDS_1E00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-survey/ldd-survey/build/development/8b52866089c106797134cf0778e7f972a7de960a/1.14.0.0/PDS4_SURVEY_1E00_1010.sch, file:/tmp/PDS4_PDS_1E00.sch]
+   Severity Level                WARNING
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Data Content Validation       off
+   Product Level Validation      on
+   Max Errors                    100000
+   Registered Contexts File      /tmp/validate-2.1.4/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units_VALID.xml
+      ERROR  [error.label.schematron]   line 19, 32: The attribute pds:information_model_version must be equal to the value '1.14.0.0'.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        1 product validation(s) completed
+
+Summary:
+
+  1 error(s)
+  1 warning(s)
+
+  Product Validation Summary:
+    0          product(s) passed
+    1          product(s) failed
+    0          product(s) skipped
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+
+  Message Types:
+    1            error.label.schematron
+    1            warning.label.missing_schematron_spec
+
+End of Report
+Completed execution in 5405 ms
+
