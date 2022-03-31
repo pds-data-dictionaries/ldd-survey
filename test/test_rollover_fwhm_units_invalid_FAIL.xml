@@ -16,7 +16,7 @@
     <logical_identifier>urn:nasa:pds:gbo.ast.spacewatch.survey:data:sw_0993_09.01_2003_03_23_09_18_47.001.fits</logical_identifier>
     <version_id>1.0</version_id>
     <title>sw_0993_09.01_2003_03_23_09_18_47.001.fits</title>
-    <information_model_version>1.15.0.0</information_model_version>
+    <information_model_version>[IM_VERSION]</information_model_version>
     <product_class>Product_Observational</product_class>
     <Citation_Information>
       <author_list>Block,M.,Bressi,T.H.,Brucker,M.J.,Cochran,K.C.,Danzl,N.M.,Descour,A.S.,Gehrels,T.,Gleason,A.E.,Larsen,J.A.,Lawrie,B.W.,Mastaler,R.A.,McMillan,R.S.,Montani,J.L.,Perry,M.L.,Read,M.T.,Scotti,J.V.,Tubbiolo,A.F.,Verts,W.T.,Williams,M.S.</author_list>
