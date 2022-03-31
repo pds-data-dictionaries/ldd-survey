@@ -48,6 +48,7 @@
     <Discipline_Area>
       <survey:Survey>
         <survey:field_id>N54064</survey:field_id>
+        <!-- INVALID: The observation purpose is Calibration, but the Primary Result Summary says this is a Science Image -->
         <survey:observation_purpose>Calibration</survey:observation_purpose>
         <survey:observation_technique>Sidereal Stare</survey:observation_technique>
         <survey:Image_Corners>

@@ -50,6 +50,7 @@
         <survey:field_id>N54064</survey:field_id>
         <survey:observation_purpose>Survey</survey:observation_purpose>
         <survey:observation_technique>Sidereal Stare</survey:observation_technique>
+        <!-- INVALID: The Image_Corners class is missing, so this label is invalid -->
         <survey:Limiting_Magnitudes>
           <survey:band_name>G</survey:band_name>
           <survey:reference_object_type>Asteroid</survey:reference_object_type>
