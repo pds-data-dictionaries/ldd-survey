@@ -5,6 +5,10 @@ The Survey dictionary contains classes that support ground based sky surveys.
 
 ## Versions
 
+### 1.1.0.0
+
+* Made observing_purpose required
+
 ### 1.0.1.0 - 2021-03-17
 
 * Made Image_Corners optional for calibration images
