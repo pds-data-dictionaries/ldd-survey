@@ -100,15 +100,6 @@
       </survey:Survey>
     </Discipline_Area>
   </Observation_Area>
-  <Reference_List>
-    <External_Reference>
-    <reference_text>
-McMillan, R. S. and the Spacewatch Team. Spacewatch preparations for the era of deep all-sky surveys.
-Near Earth Objects, our Celestial Neighbors: Opportunity and Risk, Proceedings of IAU Symposium 236.
-Edited by G.B. Valsecchi, D. Vokrouhlicky, and A. Milani. Cambridge: Cambridge University Press, 2007, pp. 329-340.
-    </reference_text>
-    </External_Reference>
-  </Reference_List>
   <File_Area_Observational>
     <File>
       <file_name>No.Data</file_name>
