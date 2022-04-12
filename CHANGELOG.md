@@ -2,6 +2,10 @@
 
 ## Versions
 
+### 1.1.0.0
+
+* Added rule to constrain units for rollover_fwhm to arcsec
+
 ### 1.0.1.0 - 2021-03-17
 
 * Made Image_Corners optional for calibration images
