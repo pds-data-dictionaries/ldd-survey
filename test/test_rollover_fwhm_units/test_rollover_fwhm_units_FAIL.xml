@@ -3,7 +3,7 @@
 <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMATRONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
 
 <!-- Test requirement that rollover_fwhm unit is set to 'arcsec'.
-  This test should pass, because rollover_fwhm is set to 'arcsec'.
+  This test should produce a failure, because rollover_fwhm is set to 'deg'.
   -->
 <Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
@@ -13,7 +13,7 @@
   <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMALOCATIONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
 
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:gbo.ast.spacewatch.survey:data:sw_0993_09.01_2003_03_23_09_18_47.001.fits</logical_identifier>
+    <logical_identifier>urn:nasa:pds:gbo.ast.spacewatch.survey:data:test_rollover_fwhm_units_fail</logical_identifier>
     <version_id>1.0</version_id>
     <title>sw_0993_09.01_2003_03_23_09_18_47.001.fits</title>
     <information_model_version>[IM_VERSION]</information_model_version>
@@ -113,8 +113,8 @@
         </survey:Image_Corners>
      <survey:Rollover>
         <survey:rollover_magnitude>21.80</survey:rollover_magnitude >
-       <!-- This statement is valid because the unit for rollover_fwhm is 'arcsec'. -->
-        <survey:rollover_fwhm unit="arcsec">3.50</survey:rollover_fwhm >
+       <!-- This statement violates the requirement that unit for rollover_fwhm be 'arcsec'. -->
+        <survey:rollover_fwhm unit="deg">3.50</survey:rollover_fwhm >
          <survey:rollover_snr>3.80</survey:rollover_snr>
      </survey:Rollover>
       </survey:Survey>
