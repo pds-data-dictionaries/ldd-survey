@@ -1,39 +1,30 @@
-# Survey Local Data Dictionary (LDD)
+# Survey Discipline Namespace
+The Survey Discipline Namespace contains classes that support ground based sky surveys.
 
-The Survey dictionary contains classes that support ground based sky surveys.
-
-
-## Versions
-
-### 1.1.0.0
-
-* Made observing_purpose required
-
-### 1.0.1.0 - 2021-03-17
-
-* Made Image_Corners optional for calibration images
-
-### 1.0.0.0 - 2020-09-22
-
-* Initial Release
+Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 
 
-## Notes
+# Documentation
 
-Each build is generating using the [lddtool](https://pds.nasa.gov/pds4/software/ldd/) specific to a version of the [PDS4 Information Model](https://pds.nasa.gov/pds4/doc/im/). The build command used is:
-
-```
-lddtool -lp ldd-file.xml
-```
-
-After a build the README.md files are updated (manually) to reflect the content of repository.
+* [Namespace Outline](docs/outline.md) - TBD
+* [User Guide - Detailed Documentation](docs/user-guide.md) - TBD
+* [Other PDS Namespace Documentation](https://pds-data-dictionaries.github.io/)
 
 
-# Contribute
+# Latest Release
+
+* [PDS Survey Discipline Namespace Release](https://pds.nasa.gov/datastandards/dictionaries/index-1.17.0.0.shtml#survey) - External link to individual files or .zip file
+* [Latest release](../../../releases/latest) - download a .zip or .tar.gz file from github
+* [Latest build](build) - access the github repository for the Survey Discipline Namespace
+* [Change log](CHANGELOG.md)
+
+
+# Feedback
 
 Have a bug or feature request? Create one in the [PDS4 Issue Repo](https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues/new/choose).
 
 
-# Support
+# Developer Support
 
-See the [PDS Data Dictionaries Support page](https://pds-data-dictionaries.github.io/support/) for more Support information.
+[For more information](src/README.md) - TBD
+
