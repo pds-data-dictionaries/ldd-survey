@@ -8,7 +8,7 @@
 <!--  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
                       http://pds.nasa.gov/pds4/survey/v1 https://pds.nasa.gov/pds4/survey/v1/PDS4_SURVEY_1A00_1010.xsd">-->
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:survey-example:data:pass3</logical_identifier>
+    <logical_identifier>urn:nasa:pds:survey.tests:data:pass3</logical_identifier>
     <version_id>1.0</version_id>
     <title>Survey Example</title>
     <information_model_version>[IM_VERSION]</information_model_version>
