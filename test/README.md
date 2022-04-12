@@ -66,3 +66,19 @@ This test describes an observation image, but does not specify image corners. It
 ### non-calibration-observation
 
 This test describes a calibration image, but the purpose in the science facets is "Science" and not "Observation". It will fail the rule `non-calibration-observation`.
+
+## test_rollover_fwhm_units Test Suite
+
+These tests are for the new rollover_fwhm unit constraints.
+
+### test_rollover_fwhm_units_VALID
+
+This test uses the correct unit for rollover_fwhm
+
+### test_rollover_fwhm_units_FAIL
+
+This test uses a unit that is in the correct unit family, but only arcsec is valid.
+
+### test_rollover_fwhm_units_invalid_FAIL
+
+This test uses a unit that is completely invalid
