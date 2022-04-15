@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.0.1.0 - Mon Nov 01 16:40:42 UTC 2021 -->
-  <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
+  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.1.0.0 - Mon Sep 27 21:51:40 UTC 2021 -->
+  <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -10,6 +9,7 @@
   <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/pds/v1" prefix="pds"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/survey/v1" prefix="survey"/>
+  <sch:ns uri="http://pds.nasa.gov/pds4/disp/v1" prefix="disp"/>
 
 		   <!-- ================================================ -->
 		   <!-- NOTE:  There are two types of schematron rules.  -->
@@ -43,6 +43,14 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:rule context="survey:Image_Corners">
+      <sch:let name="is_image" value="//(pds:Array|pds:Array_2D|pds:Array_2D_Image|pds:Array_2D_Map|pds:Array_2D_Spectrum|pds:Array_3D|pds:Array_3D_Image|pds:Array_3D_Movie|pds:Array_3D_Spectrum)"/>
+      <sch:assert test="if ($is_image) then //disp:Display_Settings else true()">
+        <title>rule_corners_display_dictionary/Rule</title>
+        If "Image_Corners" is specified and the product contains an image, a "Display_Settings" must be specified, as well.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:rule context="survey:Survey[survey:observation_purpose!='Calibration']">
       <sch:assert test="survey:Image_Corners">
         <title>rule_image_corners_observations/Rule</title>
@@ -67,14 +75,14 @@
     <sch:rule context="survey:Corner_Position/survey:corner_identification">
       <sch:assert test=". = ('Bottom Left', 'Bottom Right', 'Top Left', 'Top Right')">
         <title>survey:Corner_Position/survey:corner_identification/survey:corner_identification</title>
-        The attribute survey:Corner_Position/survey:corner_identification must be equal to one of the following values 'Bottom Left', 'Bottom Right', 'Top Left', 'Top Right'.</sch:assert>
+        The attribute survey:corner_identification must be equal to one of the following values 'Bottom Left', 'Bottom Right', 'Top Left', 'Top Right'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="survey:Limiting_Magnitudes/survey:reference_object_type">
       <sch:assert test=". = ('Asteroid', 'Comet', 'Galaxy', 'Star')">
         <title>survey:Limiting_Magnitudes/survey:reference_object_type/survey:reference_object_type</title>
-        The attribute survey:Limiting_Magnitudes/survey:reference_object_type must be equal to one of the following values 'Asteroid', 'Comet', 'Galaxy', 'Star'.</sch:assert>
+        The attribute survey:reference_object_type must be equal to one of the following values 'Asteroid', 'Comet', 'Galaxy', 'Star'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -88,21 +96,21 @@
     <sch:rule context="survey:Survey/survey:calibration_type">
       <sch:assert test=". = ('Bias', 'Dark', 'Flat Field', 'Fringe Correction')">
         <title>survey:Survey/survey:calibration_type/survey:calibration_type</title>
-        The attribute survey:Survey/survey:calibration_type must be equal to one of the following values 'Bias', 'Dark', 'Flat Field', 'Fringe Correction'.</sch:assert>
+        The attribute survey:calibration_type must be equal to one of the following values 'Bias', 'Dark', 'Flat Field', 'Fringe Correction'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="survey:Survey/survey:observation_purpose">
       <sch:assert test=". = ('Calibration', 'Followup', 'Survey')">
         <title>survey:Survey/survey:observation_purpose/survey:observation_purpose</title>
-        The attribute survey:Survey/survey:observation_purpose must be equal to one of the following values 'Calibration', 'Followup', 'Survey'.</sch:assert>
+        The attribute survey:observation_purpose must be equal to one of the following values 'Calibration', 'Followup', 'Survey'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="survey:Survey/survey:observation_technique">
       <sch:assert test=". = ('Non-Sidereal Drift Scan', 'Non-Sidereal Stare', 'Sidereal Drift Scan', 'Sidereal Stare', 'Track-And-Stack')">
         <title>survey:Survey/survey:observation_technique/survey:observation_technique</title>
-        The attribute survey:Survey/survey:observation_technique must be equal to one of the following values 'Non-Sidereal Drift Scan', 'Non-Sidereal Stare', 'Sidereal Drift Scan', 'Sidereal Stare', 'Track-And-Stack'.</sch:assert>
+        The attribute survey:observation_technique must be equal to one of the following values 'Non-Sidereal Drift Scan', 'Non-Sidereal Stare', 'Sidereal Drift Scan', 'Sidereal Stare', 'Track-And-Stack'.</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
