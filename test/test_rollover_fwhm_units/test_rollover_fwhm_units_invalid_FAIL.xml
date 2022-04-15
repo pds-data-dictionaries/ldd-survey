@@ -13,7 +13,7 @@
   <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMALOCATIONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
 
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:gbo.ast.spacewatch.survey:data:test_rollover_fwhm_units_invalid_fail</logical_identifier>
+    <logical_identifier>urn:nasa:pds:namespace_survey:data_test_rollover_fwhm_units:test_invalid_unit_fail</logical_identifier>
     <version_id>1.0</version_id>
     <title>sw_0993_09.01_2003_03_23_09_18_47.001.fits</title>
     <information_model_version>[IM_VERSION]</information_model_version>
@@ -38,37 +38,17 @@
       </Science_Facets>
     </Primary_Result_Summary>
     <Investigation_Area>
-      <name>Spacewatch</name>
-      <type>Individual Investigation</type>
+      <name>None</name>
+      <type>Other Investigation</type>
       <Internal_Reference>
-        <lid_reference>urn:nasa:pds:context:investigation:individual.spacewatch</lid_reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
         <reference_type>data_to_investigation</reference_type>
       </Internal_Reference>
     </Investigation_Area>
     <Observing_System>
       <Observing_System_Component>
-        <name>Spacewatch Mosaic Camera</name>
+        <name>10K x 10K CCD detector</name>
         <type>Instrument</type>
-        <Internal_Reference>
-          <lid_reference>urn:nasa:pds:context:instrument:steward-kittpeak.spacewatch_0m9.mosaic</lid_reference>
-          <reference_type>is_instrument</reference_type>
-        </Internal_Reference>
-      </Observing_System_Component>
-      <Observing_System_Component>
-        <name>Spacewatch 0.9-m</name>
-        <type>Telescope</type>
-        <Internal_Reference>
-          <lid_reference>urn:nasa:pds:context:telescope:steward-kittpeak.spacewatch_0m9</lid_reference>
-          <reference_type>is_telescope</reference_type>
-        </Internal_Reference>
-      </Observing_System_Component>
-      <Observing_System_Component>
-        <name>Kitt Peak Station, Steward Observatory</name>
-        <type>Host</type>
-        <Internal_Reference>
-          <lid_reference>urn:nasa:pds:context:facility:observatory.steward-kittpeak</lid_reference>
-          <reference_type>is_facility</reference_type>
-        </Internal_Reference>
       </Observing_System_Component>
     </Observing_System>
     <Target_Identification>
@@ -121,15 +101,6 @@
       </survey:Survey>
     </Discipline_Area>
   </Observation_Area>
-  <Reference_List>
-    <External_Reference>
-    <reference_text>
-McMillan, R. S. and the Spacewatch Team. Spacewatch preparations for the era of deep all-sky surveys.
-Near Earth Objects, our Celestial Neighbors: Opportunity and Risk, Proceedings of IAU Symposium 236.
-Edited by G.B. Valsecchi, D. Vokrouhlicky, and A. Milani. Cambridge: Cambridge University Press, 2007, pp. 329-340.
-    </reference_text>
-    </External_Reference>
-  </Reference_List>
   <File_Area_Observational>
     <File>
       <file_name>No.Data</file_name>
