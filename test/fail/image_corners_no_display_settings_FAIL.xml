@@ -46,6 +46,7 @@
       <type>Asteroid</type>
     </Target_Identification>
     <Discipline_Area>
+      <!-- INVALID: The display dictionary is missing, so this label is invalid -->
       <survey:Survey>
         <survey:field_id>N54064</survey:field_id>
         <survey:observation_purpose>Survey</survey:observation_purpose>
