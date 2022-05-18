@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMATRONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
+
+<!-- Test requirement that rollover_fwhm unit is set to 'arcsec'.
+  This test should produce two errors, because rollover_fwhm is set to 'grr'.
+  -->
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:survey="http://pds.nasa.gov/pds4/survey/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:disp="http://pds.nasa.gov/pds4/disp/v1">
+
+  <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMALOCATIONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:namespace_survey:data_test_rollover_fwhm_units:test_invalid_unit_fail</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>sw_0993_09.01_2003_03_23_09_18_47.001.fits</title>
+    <information_model_version>[IM_VERSION]</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Block,M.,Bressi,T.H.,Brucker,M.J.,Cochran,K.C.,Danzl,N.M.,Descour,A.S.,Gehrels,T.,Gleason,A.E.,Larsen,J.A.,Lawrie,B.W.,Mastaler,R.A.,McMillan,R.S.,Montani,J.L.,Perry,M.L.,Read,M.T.,Scotti,J.V.,Tubbiolo,A.F.,Verts,W.T.,Williams,M.S.</author_list>
+      <publication_year>2022</publication_year>
+      <description>Asteroid Survey Images from the Spacewatch 0.9 meter Mosaic Camera on Kitt Peak.</description>
+    </Citation_Information>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2003-03-23T09:18:47Z</start_date_time>
+      <stop_date_time>2003-03-23T09:20:47Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Partially Processed</processing_level>
+      <Science_Facets>
+        <discipline_name>Imaging</discipline_name>
+        <facet1>Grayscale</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>None</name>
+      <type>Other Investigation</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <Observing_System_Component>
+        <name>10K x 10K CCD detector</name>
+        <type>Instrument</type>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Multiple</name>
+      <type>Asteroid</type>
+    </Target_Identification>
+    <Discipline_Area>
+      <disp:Display_Settings>
+        <Local_Internal_Reference>
+          <local_identifier_reference>image</local_identifier_reference>
+          <local_reference_type>display_settings_to_array</local_reference_type>
+        </Local_Internal_Reference>
+        <disp:Display_Direction>
+          <disp:horizontal_display_axis>Sample</disp:horizontal_display_axis>
+          <disp:horizontal_display_direction>Left to Right</disp:horizontal_display_direction>
+          <disp:vertical_display_axis>Line</disp:vertical_display_axis>
+          <disp:vertical_display_direction>Top to Bottom</disp:vertical_display_direction>
+        </disp:Display_Direction>
+      </disp:Display_Settings>
+      <survey:Survey>
+        <survey:field_id>09.01</survey:field_id>
+        <survey:observation_purpose>Survey</survey:observation_purpose>
+        <survey:observation_technique>Sidereal Stare</survey:observation_technique>
+        <survey:Image_Corners>
+    	        <survey:equinox>J2000.0</survey:equinox>
+          <survey:Corner_Position>
+            <survey:corner_identification>Top Left</survey:corner_identification>
+            <survey:Coordinate>
+              <survey:right_ascension unit="deg">187.675870</survey:right_ascension>
+              <survey:declination unit="deg">0.027800</survey:declination>
+            </survey:Coordinate>
+          </survey:Corner_Position>
+          <survey:Corner_Position>
+            <survey:corner_identification>Top Right</survey:corner_identification>
+            <survey:Coordinate>
+              <survey:right_ascension unit="deg">186.395760</survey:right_ascension>
+              <survey:declination unit="deg">0.021610</survey:declination>
+            </survey:Coordinate>
+          </survey:Corner_Position>
+          <survey:Corner_Position>
+            <survey:corner_identification>Bottom Left</survey:corner_identification>
+            <survey:Coordinate>
+              <survey:right_ascension unit="deg">187.677080</survey:right_ascension>
+              <survey:declination unit="deg">-0.256390</survey:declination>
+            </survey:Coordinate>
+          </survey:Corner_Position>
+          <survey:Corner_Position>
+            <survey:corner_identification>Bottom Right</survey:corner_identification>
+            <survey:Coordinate>
+              <survey:right_ascension unit="deg">186.397110</survey:right_ascension>
+              <survey:declination unit="deg">-0.262730</survey:declination>
+            </survey:Coordinate>
+          </survey:Corner_Position>
+        </survey:Image_Corners>
+     <survey:Rollover>
+        <survey:rollover_magnitude>21.80</survey:rollover_magnitude >
+       <!-- This statement violates the requirement that unit for
+            rollover_fwhm be 'arcsec', using an invalid unit. -->
+        <survey:rollover_fwhm unit="grr">3.50</survey:rollover_fwhm >
+         <survey:rollover_snr>3.80</survey:rollover_snr>
+     </survey:Rollover>
+      </survey:Survey>
+    </Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>No.Data</file_name>
+      <local_identifier>file</local_identifier>
+    </File>
+    <Header>
+      <local_identifier>header</local_identifier>
+      <offset unit="byte">0</offset>
+      <object_length unit="byte">11520</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Array_2D>
+      <local_identifier>image</local_identifier>
+      <offset unit="byte">11520
+</offset>
+      <axes>2</axes>
+      <axis_index_order>Last Index Fastest</axis_index_order>
+      <description>Description</description>
+      <Element_Array>
+        <data_type>SignedMSB2</data_type>
+        <unit>counts</unit>
+        <scaling_factor>0.96419</scaling_factor>
+        <value_offset>33948</value_offset>
+      </Element_Array>
+      <Axis_Array>
+        <axis_name>Line</axis_name>
+        <elements>1025</elements>
+        <sequence_number>1</sequence_number>
+      </Axis_Array>
+      <Axis_Array>
+        <axis_name>Sample</axis_name>
+        <elements>4612</elements>
+        <sequence_number>2</sequence_number>
+      </Axis_Array>
+    </Array_2D>
+  </File_Area_Observational>
+</Product_Observational>

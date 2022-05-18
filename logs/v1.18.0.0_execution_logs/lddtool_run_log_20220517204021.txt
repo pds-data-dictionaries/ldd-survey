@@ -1,0 +1,132 @@
+
+>>  INFO LDDTOOL Version: 14.0.1
+>>  INFO IM Version Id: 1.18.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.24
+>>  INFO Date: Tue May 17 20:40:21 UTC 2022
+>>  INFO PARENT_DIR: /tmp/lddtool-14.0.1
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.1/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.0.1/lib
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:disp
+>>> INFO Init:  - Config.Properties Namespace Id Using:disp
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Found:disp
+>>> INFO Init:  - Config.Properties Namespace Id Using:disp
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Found:survey
+>>> INFO Init:  - Config.Properties Namespace Id Using:survey
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <horizontal_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <horizontal_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default minimum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <vertical_display_direction> - The default maximum characters provided by the attribute's data type is being overridden with 13
+>>> INFO Attribute: <red_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <green_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <blue_channel_band> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <frame_rate> - The default minimum value provided by the attribute's data type is being overridden with 1.0
+>>> INFO Attribute: <loop_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <loop_delay> - The default minimum value provided by the attribute's data type is being overridden with 0.0
+>>> INFO Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> WARNING Class: <Display_Settings> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Display_Direction> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Color_Display_Settings> - The class name is duplicated in this local data dictionary.
+>>> WARNING Class: <Movie_Display_Settings> - The class name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <horizontal_display_axis> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <horizontal_display_direction> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <vertical_display_axis> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <vertical_display_direction> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <color_display_axis> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <red_channel_band> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <green_channel_band> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <blue_channel_band> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <time_display_axis> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <frame_rate> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <loop_flag> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <loop_count> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <loop_delay> - The attribute name is duplicated in this local data dictionary.
+>>> WARNING Attribute: <loop_back_and_forth_flag> - The attribute name is duplicated in this local data dictionary.
+
+ -- LDDTool Execution Summary --
+     18 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1I00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-survey/ldd-survey/src/dependencies/ldd-disp/src/PDS4_DISP_IngestLDD.xml, /home/runner/work/ldd-survey/ldd-survey/src/dependencies/ldd-disp/src/PDS4_DISP_IngestLDD.xml, /home/runner/work/ldd-survey/ldd-survey/src/PDS4_SURVEY_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_SURVEY_1I00_1100.xsd
+     - ./PDS4_SURVEY_1I00_1100.sch
+     - ./PDS4_SURVEY_1I00_1100.xml
+     - ./PDS4_SURVEY_1I00_1100.JSON
+
+>>  INFO Exit(0)

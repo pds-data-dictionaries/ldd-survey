@@ -1,0 +1,2 @@
+---next build---
+2021-09-27: add requirement for display dictionary if image corners are specified

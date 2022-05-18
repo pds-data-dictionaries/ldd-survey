@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.0.1.0 - Mon Nov 01 16:40:42 UTC 2021 -->
-  <!-- Generated from the PDS4 Information Model Version 1.14.0.0 - System Build 10b -->
+  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.1.0.0 - Tue May 17 20:40:21 UTC 2022 -->
+  <!-- Generated from the PDS4 Information Model Version 1.18.0.0 - System Build 12.1 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -10,6 +9,7 @@
   <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/pds/v1" prefix="pds"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/survey/v1" prefix="survey"/>
+  <sch:ns uri="http://pds.nasa.gov/pds4/disp/v1" prefix="disp"/>
 
 		   <!-- ================================================ -->
 		   <!-- NOTE:  There are two types of schematron rules.  -->
@@ -43,10 +43,25 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:rule context="survey:Image_Corners">
+      <sch:let name="is_image" value="//(pds:Array|pds:Array_2D|pds:Array_2D_Image|pds:Array_2D_Map|pds:Array_2D_Spectrum|pds:Array_3D|pds:Array_3D_Image|pds:Array_3D_Movie|pds:Array_3D_Spectrum)"/>
+      <sch:assert test="if ($is_image) then //disp:Display_Settings else true()">
+        <title>rule_corners_display_dictionary/Rule</title>
+        If "Image_Corners" is specified and the product contains an image, a "Display_Settings" must be specified, as well.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:rule context="survey:Survey[survey:observation_purpose!='Calibration']">
       <sch:assert test="survey:Image_Corners">
         <title>rule_image_corners_observations/Rule</title>
         Observations that are not for calibration must specify the image corners.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="survey:Rollover/survey:rollover_fwhm">
+      <sch:assert test="@unit = 'arcsec'">
+        <title>rule_units_rollover_fwhm/Rule</title>
+        The rollover_fwhm must have unit = 'arcsec'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
