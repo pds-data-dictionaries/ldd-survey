@@ -1,0 +1,85 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version                       2.3.0
+   Date                          2022-10-20T22:00:45Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units/test_rollover_fwhm_units_invalid_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units/test_rollover_fwhm_units_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/fail/non-calibration-no-corners_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/fail/non-calibration-observation_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_3_FAIL.xml, file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_2_FAIL.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-survey/ldd-survey/build/development/e0b36c2588894be0c0d5679236561337b07822bb/1.19.0.0/PDS4_SURVEY_1J00_1100.xsd, file:/home/runner/work/ldd-survey/ldd-survey/build/development/e0b36c2588894be0c0d5679236561337b07822bb/1.19.0.0/PDS4_DISP_1J00_1510.xsd, file:/tmp/PDS4_PDS_1J00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-survey/ldd-survey/build/development/e0b36c2588894be0c0d5679236561337b07822bb/1.19.0.0/PDS4_DISP_1J00_1510.sch, file:/home/runner/work/ldd-survey/ldd-survey/build/development/e0b36c2588894be0c0d5679236561337b07822bb/1.19.0.0/PDS4_SURVEY_1J00_1100.sch, file:/tmp/PDS4_PDS_1J00.sch]
+   Severity Level                WARNING
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Data Content Validation       off
+   Product Level Validation      on
+   Max Errors                    100000
+   Registered Contexts File      /tmp/validate-2.3.0/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units/test_rollover_fwhm_units_invalid_FAIL.xml
+      ERROR  [error.label.schema]   line 111, 42: cvc-enumeration-valid: Value 'grr' is not facet-valid with respect to enumeration '[arcmin, arcsec, deg, hr, mrad, rad]'. It must be a value from the enumeration.
+      ERROR  [error.label.schema]   line 111, 42: cvc-attribute.3: The value 'grr' of attribute 'unit' on element 'survey:rollover_fwhm' is not valid with respect to its type, 'Units_of_Angle'.
+      ERROR  [error.label.schematron]   line 111, 42: The rollover_fwhm must have unit = 'arcsec'.
+      ERROR  [error.label.schematron]   line 111, 42: The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'mrad', 'rad'.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        1 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/test_rollover_fwhm_units/test_rollover_fwhm_units_FAIL.xml
+      ERROR  [error.label.schematron]   line 110, 42: The rollover_fwhm must have unit = 'arcsec'.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        2 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/fail/non-calibration-no-corners_FAIL.xml
+      ERROR  [error.label.schematron]   line 49, 22: Observations that are not for calibration must specify the image corners.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        3 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/fail/non-calibration-observation_FAIL.xml
+      ERROR  [error.label.schematron]   line 49, 22: The "Calibration" observation type may only be used with Products with a purpose of "Calibration"
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        4 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_FAIL.xml
+      ERROR  [error.label.schematron]   line 54, 31: If "Image_Corners" is specified and the product contains an image, a "Display_Settings" must be specified, as well.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        5 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_3_FAIL.xml
+      ERROR  [error.label.schematron]   line 55, 31: If "Image_Corners" is specified and the product contains an image, a "Display_Settings" must be specified, as well.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        6 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-survey/ldd-survey/test/fail/image_corners_no_display_settings_2_FAIL.xml
+      ERROR  [error.label.schematron]   line 55, 31: If "Image_Corners" is specified and the product contains an image, a "Display_Settings" must be specified, as well.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        7 product validation(s) completed
+
+Summary:
+
+  10 error(s)
+  7 warning(s)
+
+  Product Validation Summary:
+    0          product(s) passed
+    7          product(s) failed
+    0          product(s) skipped
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+
+  Message Types:
+    8            error.label.schematron
+    2            error.label.schema
+    7            warning.label.missing_schematron_spec
+
+End of Report
+Completed execution in 6873 ms
+
