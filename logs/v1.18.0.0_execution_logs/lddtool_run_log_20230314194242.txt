@@ -1,9 +1,9 @@
 
 >>  INFO LDDTOOL Version: 14.1.2
->>  INFO IM Version Id: 1.19.0.0
+>>  INFO IM Version Id: 1.18.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.25
->>  INFO Date: Thu Oct 20 22:00:30 UTC 2022
+>>  INFO IM Label Version Id: 1.24
+>>  INFO Date: Tue Mar 14 19:42:42 UTC 2023
 >>  INFO PARENT_DIR: /tmp/lddtool-14.1.2
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.1.2/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.1.2/lib
@@ -115,18 +115,19 @@
 
 Input:
 
-     - IM Version: 1J00
+     - IM Version: 1I00
      - PDS4 Flag: true
      - LDD Flag: true
+     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-survey/ldd-survey/src/dependencies/ldd-disp/src/PDS4_DISP_IngestLDD.xml, /home/runner/work/ldd-survey/ldd-survey/src/dependencies/ldd-disp/src/PDS4_DISP_IngestLDD.xml, /home/runner/work/ldd-survey/ldd-survey/src/PDS4_SURVEY_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_SURVEY_1J00_1100.xsd
-     - ./PDS4_SURVEY_1J00_1100.sch
-     - ./PDS4_SURVEY_1J00_1100.xml
-     - ./PDS4_SURVEY_1J00_1100.JSON
+     - ./PDS4_SURVEY_1I00_1100.xsd
+     - ./PDS4_SURVEY_1I00_1100.sch
+     - ./PDS4_SURVEY_1I00_1100.xml
+     - ./PDS4_SURVEY_1I00_1100.JSON
 
 >>  INFO Exit(0)
