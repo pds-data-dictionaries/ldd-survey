@@ -7,7 +7,7 @@ Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 # Documentation
 
 * [Namespace Outline](docs/outline.md) - TBD
-* [User Guide - Detailed Documentation](docs/user-guide.md) - TBD
+* [User Guide - Detailed Documentation](docs/Survey_Users_Guide.pdf)
 * [Other PDS Namespace Documentation](https://pds-data-dictionaries.github.io/)
 
 
