@@ -1,0 +1,46 @@
+
+>>  INFO LDDTOOL Version: 15.2.4
+>>  INFO IM Version Id: 1.20.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.26
+>>  INFO Date: Mon Apr 28 18:43:15 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.4/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:disp
+>>> INFO Init:  - Config.Properties Namespace Id Using:disp
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Found:survey
+>>> INFO Init:  - Config.Properties Namespace Id Using:survey
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+>>> INFO Attribute: <right_ascension> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <right_ascension> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <declination> - The default minimum value provided by the attribute's data type is being overridden with -90
+>>> INFO Attribute: <declination> - The default maximum value provided by the attribute's data type is being overridden with 90
+
+ -- LDDTool Execution Summary --
+     0 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1K00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-survey/ldd-survey/src/dependencies/ldd-disp/src/PDS4_DISP_IngestLDD.xml, /home/runner/work/ldd-survey/ldd-survey/src/PDS4_SURVEY_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_SURVEY_1K00_1100.xsd
+     - ./PDS4_SURVEY_1K00_1100.sch
+     - ./PDS4_SURVEY_1K00_1100.xml
+     - ./export/PDS4_PDS_1K00.JSON
+
+>>  INFO Exit(0)
