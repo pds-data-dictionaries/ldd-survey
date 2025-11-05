@@ -6,7 +6,6 @@ Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 
 # Documentation
 
-* [Namespace Outline](docs/outline.md) - TBD
 * [User Guide - Detailed Documentation](docs/Survey_Users_Guide.pdf)
 * [Other PDS Namespace Documentation](https://pds-data-dictionaries.github.io/)
 
@@ -14,7 +13,7 @@ Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 # Latest Release
 
 * [PDS Survey Discipline Namespace Release](https://pds.nasa.gov/datastandards/dictionaries/index-1.17.0.0.shtml#survey) - External link to individual files or .zip file
-* [Latest release](../../../releases/latest) - download a .zip or .tar.gz file from github
+* [Latest release](https://github.com/pds-data-dictionaries/ldd-survey/releases/latest) - download a .zip or .tar.gz file from github
 * [Latest build](build) - access the github repository for the Survey Discipline Namespace
 * [Change log](CHANGELOG.md)
 
@@ -22,9 +21,4 @@ Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 # Feedback
 
 Have a bug or feature request? Create one in the [PDS4 Issue Repo](https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo/issues/new/choose).
-
-
-# Developer Support
-
-[For more information](src/README.md) - TBD
 
