@@ -12,7 +12,7 @@ Steward: Jesse Stone, SBN-PSI Node (@jstone-psi)
 
 # Latest Release
 
-* [PDS Survey Discipline Namespace Release](https://pds.nasa.gov/datastandards/dictionaries/index-1.17.0.0.shtml#survey) - External link to individual files or .zip file
+* [PDS Survey Discipline Namespace Release](https://pds.nasa.gov/datastandards/dictionaries/#survey) - External link to individual files or .zip file
 * [Latest release](https://github.com/pds-data-dictionaries/ldd-survey/releases/latest) - download a .zip or .tar.gz file from github
 * [Latest build](build) - access the github repository for the Survey Discipline Namespace
 * [Change log](CHANGELOG.md)
