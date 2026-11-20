@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.1.0.0 - Fri Apr 24 16:56:45 UTC 2026 -->
+  <!-- PDS4 Schematron for Name Space Id:survey  Version:1.1.0.0 - Thu Nov 19 22:39:31 UTC 2026 -->
   <!-- Generated from the PDS4 Information Model Version 1.25.0.0 - System Build 16.0	 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -19,20 +19,6 @@
 		   <!--        lists. These two types of rules have been -->
 		   <!--        merged together in the rules below.       -->
 		   <!-- ================================================ -->
-  <sch:pattern>
-    <sch:rule context="survey:Coordinate/survey:declination">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>survey:Coordinate/survey:declination/survey:declination</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:rule context="survey:Coordinate/survey:right_ascension">
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>survey:Coordinate/survey:right_ascension/survey:right_ascension</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
-    </sch:rule>
-  </sch:pattern>
   <sch:pattern>
     <sch:rule context="survey:Corner_Position/survey:corner_identification">
       <sch:assert test=". = ('Bottom Left', 'Bottom Right', 'Top Left', 'Top Right')">
@@ -60,9 +46,6 @@
       <sch:assert test="@unit = 'arcsec'">
         <title>survey:Rollover/survey:rollover_fwhm/Rule</title>
         The rollover_fwhm must have unit = 'arcsec'.</sch:assert>
-      <sch:assert test="@unit = ('arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad')">
-        <title>survey:Rollover/survey:rollover_fwhm/survey:Rule</title>
-        The attribute @unit must be equal to one of the following values 'arcmin', 'arcsec', 'deg', 'hr', 'microrad', 'mrad', 'rad'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
